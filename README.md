@@ -24,14 +24,12 @@ corp-analysis-web/
 ├── web/              # React 웹서비스
 ├── preprocessing/    # 데이터 전처리 (gdelt, gpr, dart)
 ├── analysis/         # 분석·가설 검증·모델링 (track1, track2)
-├── db/               # ERD, 테이블 설명, RLS 보안 설정
-└── data/processed/   # 전처리 완료 데이터 (Supabase 적재용)
+└── db/               # ERD, 테이블 설명, RLS 보안 설정
 ```
 
 ## 데이터 흐름
-원본 데이터 → `preprocessing/` → `data/processed/` → `analysis/` · Supabase → `web/` 대시보드
-
-- 원본·중간 데이터는 용량 문제로 레포에 포함하지 않음 (`preprocessing/README.md` 참고)
+- 원본 데이터 → `preprocessing/` → `analysis/` · Supabase → `web/` 대시보드
+- SUPABASE에 바로 연결해서 활용
 
 ## 팀원 및 역할
 | 이름 | 역할 |
