@@ -1,0 +1,59 @@
+{
+  "original_and_corrected_equal": true,
+  "following_q1_comparative_krw": "949274000",
+  "own_direct_eok": "9.49274",
+  "h1_minus_q2_eok": "9.49269",
+  "difference_krw": -5000,
+  "relative_difference_pct": "0.0005267183131529990287314305459",
+  "cause": "not established; not caused by May13-May16 correction; do not label pure rounding as fact",
+  "decision": "USE_WITH_NOTE_OWN_DIRECT_CELL",
+  "sum_checks": [
+    {
+      "rcept_no": "20220513000150",
+      "components_equal_total": true,
+      "other_sga_krw": "949274000"
+    },
+    {
+      "rcept_no": "20220516001448",
+      "components_equal_total": true,
+      "other_sga_krw": "949274000"
+    }
+  ],
+  "evidence": [
+    {
+      "rcept_no": "20220513000150",
+      "analysis_value_eok": "9.49274",
+      "derivation": "direct_cell",
+      "value_id": "72ea22bd2e649860cc0e4eb1",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220513000150"
+    },
+    {
+      "rcept_no": "20220516001448",
+      "analysis_value_eok": "9.49274",
+      "derivation": "direct_cell",
+      "value_id": "43cda7c71ce74d0d3a8790c8",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516001448"
+    },
+    {
+      "rcept_no": "20230511000201",
+      "analysis_value_eok": "9.49274",
+      "derivation": "direct_cell",
+      "value_id": "7d7ea13191f5a983ea03daec",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230511000201"
+    },
+    {
+      "rcept_no": "20220812000093",
+      "analysis_value_eok": "9.49269",
+      "derivation": "same_table_H1_minus_Q2",
+      "value_id": "38d9dd8983e8185cd7c58f74_Q1",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220812000093"
+    },
+    {
+      "rcept_no": "20230814001173",
+      "analysis_value_eok": "9.49269",
+      "derivation": "same_table_H1_minus_Q2",
+      "value_id": "fad44aa0683a2c50ef5034ca_Q1",
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230814001173"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "rcept_no": "20240320000910",
+    "source_table_id": "5e65777da92c93fdbc0cc40c",
+    "raw_gross_thousand": "92732585",
+    "raw_allowance_thousand": "1259811",
+    "raw_rate_pct": "1.4%",
+    "cfs_gross_thousand": "95813707",
+    "cfs_allowance_thousand": "1333211",
+    "gross_difference_thousand": "-3081122",
+    "cfs_calculated_pct": "1.391461662160717777050417223",
+    "cfs_rounded_pct": "1.4",
+    "decision": "HOLD_STALE_Q3_COMPONENTS",
+    "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000910"
+  },
+  {
+    "rcept_no": "20240814000960",
+    "source_table_id": "44b237585356e20adc679604",
+    "raw_gross_thousand": "134509924",
+    "raw_allowance_thousand": "4516536",
+    "raw_rate_pct": "3.4%",
+    "cfs_gross_thousand": "134509024",
+    "cfs_allowance_thousand": "4516536",
+    "gross_difference_thousand": "900",
+    "cfs_calculated_pct": "3.357794046591253238147055472",
+    "cfs_rounded_pct": "3.4",
+    "decision": "USE_WITH_NOTE_ROUNDED_RATE_ONLY",
+    "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240814000960"
+  }
+]

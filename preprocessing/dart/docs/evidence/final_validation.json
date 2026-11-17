@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "quarter_variable_workbook_cells_checked": 1196,
+  "quarter_variable_decisions_checked": 598,
+  "raw_json_sha256": "MATCH",
+  "ratio_checks": "PASS",
+  "missing_values_preserved": true
+}

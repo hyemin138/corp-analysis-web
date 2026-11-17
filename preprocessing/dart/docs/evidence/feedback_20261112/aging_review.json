@@ -1,0 +1,53 @@
+[
+  {
+    "rcept_no": "20200529000931",
+    "table_id": "0f3d2aae3c642c89eeab5739",
+    "period_end": "2020-03",
+    "raw_bucket_values": [
+      "36,599",
+      "945",
+      "1,305",
+      "2,472"
+    ],
+    "raw_total": "41,320,408",
+    "sum_minus_total_thousand_krw": "-41279087",
+    "same_as_2023Q3_table": false,
+    "decision": "HOLD_ORIGINAL_INCONSISTENCY",
+    "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200529000931",
+    "derived_ratios_filled": false
+  },
+  {
+    "rcept_no": "20210322000298",
+    "table_id": "ab0737efdbd44a692a3dbc13",
+    "period_end": "2020-12",
+    "raw_bucket_values": [
+      "3,348,601",
+      "13,156,606",
+      "1,702,906",
+      "1,698,155"
+    ],
+    "raw_total": "49,906,268",
+    "sum_minus_total_thousand_krw": "-30000000",
+    "same_as_2023Q3_table": false,
+    "decision": "HOLD_ORIGINAL_INCONSISTENCY",
+    "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210322000298",
+    "derived_ratios_filled": false
+  },
+  {
+    "rcept_no": "20240320000910",
+    "table_id": "cd4a7cf1ef9c48f574a2572a",
+    "period_end": "2023-12",
+    "raw_bucket_values": [
+      "90,870,600",
+      "1,546,681",
+      "151,109",
+      "164,195"
+    ],
+    "raw_total": "92,732,585",
+    "sum_minus_total_thousand_krw": "0",
+    "same_as_2023Q3_table": true,
+    "decision": "HOLD_STALE_Q3_TABLE",
+    "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000910",
+    "derived_ratios_filled": false
+  }
+]

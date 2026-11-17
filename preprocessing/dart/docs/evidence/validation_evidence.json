@@ -1,0 +1,24 @@
+{
+  "evidence_type": "USER_REPORTED_LOCAL_EXECUTION",
+  "date": "2026-11-11",
+  "source_json_sha256": "39dd30e8c06b4321cd26aed709fb3de096ecca4501afe5fdced7d34eee7fee7a",
+  "reported_raw_revalidated": {
+    "P0": true,
+    "P1": true,
+    "P2": true
+  },
+  "P2_reported_search_scope": "ALL_PRIMARY_XML_TABLES",
+  "P2_reported_primary_tables_scanned": 19417,
+  "P2_reported_counts": {
+    "reports": 29,
+    "aging_usable_quarters": 23,
+    "allowance_ratio_quarters": 26,
+    "reported_setting_rate_reconciled_quarters": 24,
+    "movement_tables": 30,
+    "sga_accounts": 14
+  },
+  "package_construction": "Numeric data reconstructed from the uploaded JSON with the tested scripts. Local run logs agree on hash and counts; the original PC output files/raw ZIP bytes were not uploaded.",
+  "source_output_flags": "Copied original_outputs retain raw_revalidated=false from this workspace; do not treat these flags as a failed user-local verification.",
+  "raw_originals_in_this_package": false,
+  "raw_originals_location": "collector PC data/raw; attach with code/attach_raw_to_handoff.py if required"
+}

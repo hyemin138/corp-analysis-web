@@ -1,0 +1,23 @@
+{
+  "note": "계정 정의 목록. 런타임 목록은 collector.py의 ACCOUNTS를 사용. 이 파일은 데이터 사전입니다.",
+  "bad_debt_expense": "판관비 내 대손상각비. 기타의 대손·금융자산손상과 혼합 금지",
+  "salary_sga": "판매비와관리비에 포함된 급여",
+  "depreciation_sga": "판매비와관리비에 포함된 감가상각비",
+  "sga_total": "판매비와관리비 합계",
+  "trade_receivables": "연결 매출채권. 총액/순액 기준을 note에 반드시 기록",
+  "loss_allowance": "연결 매출채권에 대응하는 손실충당금. 전체 기타채권 충당금 혼합 금지",
+  "logistics_segment_sales": "사업현황의 종합물류 매출",
+  "logistics_segment_cost": "사업현황의 종합물류 원가",
+  "subsidiary_sales": "사업현황의 종속회사 매출",
+  "subsidiary_cost": "사업현황의 종속회사 원가",
+  "elimination_sales": "연결 매출 내부거래 제거/조정",
+  "elimination_cost": "연결 원가 내부거래 제거/조정",
+  "container_teu_annual": "사업보고서 종합물류 연간 TEU. 연결매출 범위와 다를 수 있음",
+  "sea_purchase": "연간 해상운송 매입",
+  "rail_purchase": "연간 철도운송 매입",
+  "truck_purchase": "연간 트럭운송 매입",
+  "air_purchase": "연간 항공운송 매입",
+  "terminal_purchase": "연간 터미널 매입",
+  "aging_bucket": "P2 실험 항목. 여러 연령구간을 구조화하려면 차원 확장 필요",
+  "ecl_rate": "P2 기대신용손실률. 여러 구간을 구조화하려면 차원 확장 필요"
+}

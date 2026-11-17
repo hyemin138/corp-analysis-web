@@ -1,0 +1,24 @@
+﻿variable,variable_ko,unit,total_quarters,diagnostic_values,screened_values,USE,USE_WITH_NOTE,HOLD_Q4,HOLD_DEFINITION,HOLD_SCOPE,HOLD_AGING,MISSING,NOT_IDENTIFIED,USE_DERIVED_REVIEWED
+trade_receivables_gross,유동매출채권 총액,억원,26,26,26,23,3,0,0,0,0,0,0,0
+loss_allowance,매출채권 충당금 규모,억원,26,26,26,23,3,0,0,0,0,0,0,0
+trade_receivables_net,유동매출채권 순액,억원,26,26,26,23,3,0,0,0,0,0,0,0
+sga_total,판관비 합계,억원,26,26,22,14,3,1,3,0,0,0,0,5
+bad_debt_expense,대손상각비,억원,26,23,23,15,3,0,0,0,0,3,0,5
+salary_sga,급여,억원,26,26,25,17,3,1,0,0,0,0,0,5
+depreciation_sga,감가상각비,억원,26,26,25,17,3,1,0,0,0,0,0,5
+allowance_ratio_pct,계산 충당금 비율,%,26,26,26,26,0,0,0,0,0,0,0,0
+reported_allowance_setting_ratio_pct,공시 대손충당금 설정률,%,26,26,25,24,1,0,0,1,0,0,0,0
+age_gt3m_share_pct,3개월 초과 경과기간 비중,%,26,23,23,23,0,0,0,0,3,0,0,0
+age_gt6m_share_pct,6개월 초과 경과기간 비중,%,26,23,23,23,0,0,0,0,3,0,0,0
+age_gt12m_share_pct,1년 초과 경과기간 비중,%,26,23,23,23,0,0,0,0,3,0,0,0
+advertising_sga,광고선전비,억원,26,26,25,17,3,1,0,0,0,0,0,5
+amortization_sga,무형자산상각비,억원,26,26,25,17,3,1,0,0,0,0,0,5
+fees_sga,지급수수료,억원,26,26,25,17,3,1,0,0,0,0,0,5
+insurance_sga,보험료,억원,26,26,25,17,3,1,0,0,0,0,0,5
+other_sga,기타 판관비,억원,26,26,25,16,4,1,0,0,0,0,0,5
+rent_sga,임차료,억원,26,26,25,17,3,1,0,0,0,0,0,5
+retirement_sga,퇴직급여,억원,26,26,25,17,3,1,0,0,0,0,0,5
+taxes_sga,세금과공과,억원,26,26,25,17,3,1,0,0,0,0,0,5
+transport_sga,운반비,억원,26,26,25,17,3,1,0,0,0,0,0,5
+welfare_sga,복리후생비,억원,26,26,25,17,3,1,0,0,0,0,0,5
+ecl_rate,명시적 기대신용손실률,%,26,0,0,0,0,0,0,0,0,0,26,0
