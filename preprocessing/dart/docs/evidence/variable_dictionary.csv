@@ -1,0 +1,24 @@
+﻿variable,variable_ko,frequency,unit,definition,screened_values,join_rule
+trade_receivables_gross,유동매출채권 총액,quarterly,억원,연결 유동매출채권 및 대응 충당금 잔액,26,period_end + available_on_kst; as-of 선택은 A 단계
+loss_allowance,매출채권 충당금 규모,quarterly,억원,연결 유동매출채권 및 대응 충당금 잔액,26,period_end + available_on_kst; as-of 선택은 A 단계
+trade_receivables_net,유동매출채권 순액,quarterly,억원,연결 유동매출채권 및 대응 충당금 잔액,26,period_end + available_on_kst; as-of 선택은 A 단계
+sga_total,판관비 합계,quarterly,억원,판관비 내 계정,22,period_end + available_on_kst; as-of 선택은 A 단계
+bad_debt_expense,대손상각비,quarterly,억원,판관비 내 계정,23,period_end + available_on_kst; as-of 선택은 A 단계
+salary_sga,급여,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+depreciation_sga,감가상각비,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+allowance_ratio_pct,계산 충당금 비율,quarterly,%,100×충당금 절대액/매출채권 총액. ECL과 구분,26,period_end + available_on_kst; as-of 선택은 A 단계
+reported_allowance_setting_ratio_pct,공시 대손충당금 설정률,quarterly,%,공시 대손충당금 설정률. ECL과 구분,25,period_end + available_on_kst; as-of 선택은 A 단계
+age_gt3m_share_pct,3개월 초과 경과기간 비중,quarterly,%,경과기간별 잔액 비중. 연체기간으로 단정하지 않음,23,period_end + available_on_kst; as-of 선택은 A 단계
+age_gt6m_share_pct,6개월 초과 경과기간 비중,quarterly,%,경과기간별 잔액 비중. 연체기간으로 단정하지 않음,23,period_end + available_on_kst; as-of 선택은 A 단계
+age_gt12m_share_pct,1년 초과 경과기간 비중,quarterly,%,경과기간별 잔액 비중. 연체기간으로 단정하지 않음,23,period_end + available_on_kst; as-of 선택은 A 단계
+advertising_sga,광고선전비,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+amortization_sga,무형자산상각비,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+fees_sga,지급수수료,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+insurance_sga,보험료,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+other_sga,기타 판관비,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+rent_sga,임차료,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+retirement_sga,퇴직급여,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+taxes_sga,세금과공과,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+transport_sga,운반비,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+welfare_sga,복리후생비,quarterly,억원,판관비 내 계정,25,period_end + available_on_kst; as-of 선택은 A 단계
+ecl_rate,명시적 기대신용손실률,quarterly,%,명시적 기대신용손실률; 현재 확정값 없음,0,period_end + available_on_kst; as-of 선택은 A 단계

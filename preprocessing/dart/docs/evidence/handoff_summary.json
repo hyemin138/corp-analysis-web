@@ -1,0 +1,24 @@
+{
+  "quarters": 26,
+  "quarter_variables": 23,
+  "cells": 598,
+  "decisions": {
+    "USE": 420,
+    "HOLD_DEFINITION": 3,
+    "HOLD_AGING": 9,
+    "NOT_IDENTIFIED": 26,
+    "MISSING": 3,
+    "HOLD_Q4": 13,
+    "USE_WITH_NOTE": 53,
+    "USE_DERIVED_REVIEWED": 70,
+    "HOLD_SCOPE": 1
+  },
+  "screened_nonempty_cells": 543,
+  "annual_rows": 6,
+  "source_reports": 29,
+  "status": "HANDOFF_WITH_REVIEWED_Q4_DERIVATIONS",
+  "forecast_ready": false,
+  "source_sha256": "39dd30e8c06b4321cd26aed709fb3de096ecca4501afe5fdced7d34eee7fee7a",
+  "last_reviewed": "2026-11-12",
+  "restored_in_feedback_review": 72
+}

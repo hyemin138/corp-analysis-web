@@ -1,0 +1,11 @@
+{
+  "official_financial_sections_downloaded": 18,
+  "q4_cells_restorable": 70,
+  "q4_controls": 15,
+  "q1_cells_restorable": 1,
+  "setting_rate_cells_restorable": 1,
+  "aging_quarters_still_held": 3,
+  "setting_rate_quarters_still_held": 1,
+  "raw_xml_hash_reverification": false,
+  "evidence": "Live DART HTML and previously uploaded XML-extracted JSON agree; no private API key used"
+}
