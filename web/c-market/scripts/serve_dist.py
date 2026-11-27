@@ -6,6 +6,10 @@ import argparse
 R=Path(__file__).resolve().parents[1]
 class Handler(SimpleHTTPRequestHandler):
  def __init__(self,*a,**kw):super().__init__(*a,directory=str(R/'dist'),**kw)
+ def do_GET(self):
+  if urlsplit(self.path).path=='/favicon.ico':
+   self.send_response(204);self.end_headers();return
+  super().do_GET()
  def translate_path(self,path):
   if urlsplit(path).path=='/data/market.json':return str(R/'public/data/market.json')
   return super().translate_path(path)
