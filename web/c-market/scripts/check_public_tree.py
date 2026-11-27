@@ -8,7 +8,8 @@ assert paths, 'No staged paths'
 for path in paths:
     assert path.startswith('web/c-market/'), 'Change outside C scope'
     relative = path.removeprefix('web/c-market/')
-    assert not any(p in relative.split('/') for p in ['node_modules','dist','qa','data','.env']), 'Private/generated path staged'
+    assert not any(p in relative.split('/') for p in ['node_modules','dist','qa','.env']), 'Private/generated path staged'
+    assert not relative.startswith(('data/','public/data/')), 'Private snapshot path staged'
     blob = subprocess.check_output(['git', 'show', ':' + path], cwd=ROOT)
     assert len(blob) < 1_000_000, 'Unexpected large public file'
     text = blob.decode('utf-8-sig')

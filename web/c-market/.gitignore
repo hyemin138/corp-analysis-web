@@ -3,8 +3,8 @@ dist/
 test-results/
 playwright-report/
 qa/
-public/data/
-data/
+/public/data/
+/data/
 *.tsbuildinfo
 __pycache__/
 .env
