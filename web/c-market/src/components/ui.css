@@ -1,0 +1,12 @@
+/* Readable evidence and questions; no meaning is encoded by colour alone. */
+main .caption,main .page-footer{font-size:12px;color:#536b87}
+main .snapshot-strip{font-size:12px;color:#536b87}
+main .panel-head p{font-size:13px;color:#5c718d}
+main .stat p,main .stat>span{font-size:12px;color:#536b87}
+main .observations article>p{font-size:14px;color:#405f81}
+main .observations .check-question{font-size:12px;color:#365e8b;border-left:2px solid #b2c9e8;padding-left:9px;line-height:1.8;margin:9px 0}
+main .observations summary{font-size:12px;color:#3e6297}
+.check-questions ul{margin:9px 0 12px;padding-left:20px;font-size:13px;color:#4d6686;line-height:1.9}
+.check-questions li+li{margin-top:5px}
+.stat-caveat{font-size:12px;color:#536b87;background:#edf3fc;border:1px solid #d8e3f3;border-radius:6px;padding:12px 16px;margin:-6px 0 20px;line-height:1.9}
+.transit-chips{padding:15px 23px 12px}
