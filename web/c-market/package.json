@@ -1,0 +1,29 @@
+{
+  "name": "corp-analysis-c-market",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort",
+    "test": "node --test tests/module.test.mjs tests/analysis.test.mjs tests/calendar.test.mjs",
+    "test:data": "node --test tests/data.test.mjs tests/v2-data.test.mjs",
+    "test:browser": "playwright test",
+    "data:import": "python -B scripts/import_snapshot.py"
+  },
+  "dependencies": {
+    "echarts": "^6.1.0",
+    "lucide-react": "^1.81.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.4.0"
+  }
+}
