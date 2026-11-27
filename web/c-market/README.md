@@ -1,12 +1,7 @@
-# C 국제 물류시장 대시보드
+# C Market Desk V2
 
-[실행·데이터 가져오기 안내](C_DASHBOARD_README.md)에서 시작하세요.
+태웅로직스 캡스톤의 국제 물류시장 분석 모듈입니다. 보관된 실제 연구 자료로 시장 변화, 항로별 차이, 통항환경, 같은 상태의 과거 사례, 예측의 실패와 불확실성을 탐색합니다. 오늘의 실시간 시장 서비스는 아닙니다.
 
-6개 연구 화면과 실제 로컬 C 데이터로 검증된 React 모듈입니다. 공개 저장소에는 코드·테스트·문서만 포함하며 실자료는 팀 내부 ZIP에서 가져옵니다. DB·API·공통 라우터는 아직 연결하지 않았습니다.
+[실행 안내](C_DASHBOARD_README.md) · [기존 화면과 비교](C_V2_BEFORE_AFTER.md) · [팀 통합](C_V2_TEAM_INTEGRATION_GUIDE.md) · [최종 QA](C_V2_FINAL_QA_STATUS.md) · [상세 완료보고](C_V2_FINAL_REPORT.md)
 
-- [구조](C_DASHBOARD_ARCHITECTURE.md)
-- [팀 프로젝트 연결](C_INTEGRATION_GUIDE.md)
-- [데이터 공급 협의](C_DATA_API_REQUIREMENTS.md)
-- [기능 현황](C_FEATURE_STATUS.md)
-- [실제 검증](C_QA_REPORT.md)
-- [연구 한계](C_RESEARCH_LIMITATIONS.md)
+공개 Git에는 소스·테스트·방법 문서와 자체 연구의 최소 집계 통계만 포함합니다. 실자료와 동결 빌드는 팀 내부 ZIP으로 전달합니다. 지수·통항 자료의 외부 재배포 권한을 승인하는 패키지가 아닙니다. 원연구의 `CONDITIONAL_REVIEW` 상태를 유지합니다.

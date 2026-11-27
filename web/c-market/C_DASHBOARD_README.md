@@ -1,33 +1,44 @@
-# C 외부 시장 대시보드
+# 실행 및 시연 안내
 
-React + TypeScript + Vite + ECharts의 독립 C 모듈이다. 팀 저장소 main에는 실행 가능한 React 셸이 없었으므로 `web/c-market` 안에만 구성했다. 기존 `web/README.md`, A/B·DB·전처리 파일은 변경하지 않았다. 운영 배포나 Supabase 연결은 하지 않았다.
+네 영역은 **시장 변화 → 운임·통항 탐색 → 같은 상태 비교 → 예측 신뢰도**입니다. 숫자를 확인한 뒤 차이의 근거와 해석 한계를 읽고 추가 점검 질문으로 이어집니다.
 
-6개 화면: 국제운임 현황, KCCI 항로 비교, 설명용 시장 상태, 해상 통항환경, EUMED 28일 후향 예측 검증, 날짜별 종합 탐색. 날짜·기간·계열 선택, 확대·툴팁·범례, CSV 내보내기와 화면 간 날짜 연동을 제공한다.
+## 팀 내부 ZIP으로 바로 실행
 
-## 실행
+ZIP을 별도 폴더에 풀고 해당 폴더에서 실행합니다. Python 3.13과 브라우저가 필요합니다. 이 방식은 npm 설치 없이 포함된 빌드를 사용합니다.
 
-Node 24에서 검증했다. 이 폴더에서 실행한다.
+```powershell
+py -3.13 -B scripts/serve_dist.py
+```
+
+접속: **http://127.0.0.1:4194/**. 서버는 localhost에만 바인딩합니다. `dist`의 중복 JSON을 제외하고 `public/data/market.json` 한 개를 공급합니다. 종료는 터미널의 Ctrl+C입니다.
+
+## 소스 개발
+
+Node 24에서 모듈 폴더의 명령을 실행합니다.
 
 ```powershell
 npm ci
-# 팀 내부 ZIP을 별도 폴더에 풀어 놓은 뒤, 실제 경로로 바꾼다.
-py -3.13 -B scripts/import_snapshot.py --from-app "C:\team-data\TAEWOONG_C_DASHBOARD_APP"
 npm run dev
 ```
 
-개발: http://127.0.0.1:5174 . 프로덕션 확인: `npm run build` 후 `npm run preview`, http://127.0.0.1:4174 . 서버가 켜져 있는 동안만 접속 가능하다. `python`이 실행 가능한 환경이라면 `npm run data:import -- --from-app "경로"`도 사용할 수 있다.
-
-내부 데이터 ZIP은 `TAEWOONG_C_DASHBOARD_APP_FINAL.zip`이다. 원자료10개 SHA를 검증하고 완전입력192·구간62·전환53·평가80원점 조건을 검사한 뒤 화면 JSON을 그대로 복사한다. 재수집·모형학습·값 보정은 없다.
-
-## 공개 저장소와 내부 데이터의 분리
-
-연구 인계 원본은 팀 내부용이며 외부 재배포 권한이 확인되지 않았다. 따라서 `public/data/`, `data/`, 스크린샷·로컬 QA 산출물·dist는 Git에서 제외한다. 원자료나 전체 마스터를 커밋하지 않는다. 데이터 없는 클론은 앱이 실행되지만 가져오기 안내를 표시하며, 숫자를 임의 생성하지 않는다. 위 내부 ZIP을 전달받아야 실제 연구 화면을 사용할 수 있다. GitHub만으로 실자료가 제공된다는 뜻은 아니다.
+개발 접속: **http://127.0.0.1:5174/**. 공개 클론은 실자료를 포함하지 않습니다. 팀 내부 ZIP의 `public/data/market.json`을 같은 상대 경로에 두거나 기존 `scripts/import_snapshot.py --from-app` 안내로 로컬 원본을 가져옵니다. 인증키·수집 API가 필요하지 않습니다.
 
 ```powershell
-npm test              # 데이터 없이 실행 가능한 코드 검사
-npm run test:data     # 내부 스냅샷 가져온 후18개 데이터/지표 검사
-npm run test:browser  # 내부 스냅샷 + 설치된 Google Chrome 필요
+npm test
+npm run test:data
+npm run test:browser
 npm run build
+npm run preview
 ```
 
-아키텍처·연결 방식은 C_DASHBOARD_ARCHITECTURE.md와 C_INTEGRATION_GUIDE.md, 팀 DB 협의 항목은 C_DATA_API_REQUIREMENTS.md를 따른다. 검증 범위와 연구 한계는 C_QA_REPORT.md 및 C_RESEARCH_LIMITATIONS.md에 구분했다.
+프로덕션 미리보기: **http://127.0.0.1:4174/**. 코드 테스트와 빌드는 실자료 없이도 가능합니다. 데이터·브라우저 검사는 내부 스냅샷이 필요하며, 브라우저 검사는 Google Chrome 설치도 필요합니다.
+
+## 5분 시연
+
+1. 시장 변화에서 분석 기간과 항로를 고르고 공통 기준일·기준100·항로 격차를 확인합니다.
+2. 운임·통항 탐색으로 이동해 경로와 일별/주간을 바꿉니다. 같은 날짜 커서와 실제 관측창을 읽습니다.
+3. 상태 타임라인에서 날짜를 선택하고 같은 상태 비교의 A/B 수치가 어떻게 다른지 확인합니다.
+4. 예측 신뢰도에서 큰 오차 원점을 고르고 방향 적중과 변화폭 오차의 차이, 구간 폭·실제값 포함 여부를 확인합니다.
+5. 원점 환경 연결로 돌아갑니다. 예측 원점과 시장 선택일은 의미가 달라 독립적으로 보존됩니다.
+
+신규 예측 생성·운영 DB·실시간 수집은 구현 범위 밖입니다. 미배정 상태, 실제값 없는 예측, 최초 공개 빈티지 미검증을 정상 관측이나 미래 성능으로 해석하지 마세요.
